@@ -7,20 +7,53 @@
     <title>Strona główna</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+      body {
+        background-color: #74d0fe;
+      }
       main {
-        background: url("https://prezentmarzen.com/img/pmcategorygallery/155/base-382-gra-w-laserowy-paintball-3964.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        height: 700px;
+        /* background: url("https://prezentmarzen.com/img/pmcategorygallery/155/base-382-gra-w-laserowy-paintball-3964.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center; */
+        grid-template-columns: auto 1000px;
+        grid-template-areas: "txt img";
+        display: grid;
+        height: 850px;
+        margin-top: 3em;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-bottom: 0;
+        gap: 10px;
+      }
+      aside {
+        grid-area: img;
       }
       .button2 {
         background-color: orange;
         color: fff;
         border: 2px solid orange;
       }
+
+      p {
+        font-size: 34px;
+        color: rgb(0, 0, 0);
+        /* text-align: center;
+        flex-basis: 30%; */
+      }
+      footer * {
+        display: flex;
+        justify-content: center;
+      }
+
+      /* #teksty {
+        display: flex;
+
+        align-items: center;
+        height: 80vh;
+      } */
     </style>
   </head>
+
   <body>
     <div class="rectangle">
       <a href="index.html">
@@ -40,13 +73,24 @@
       </a>
     </div>
     <main>
+      <aside>
+        <img
+          src="https://prezentmarzen.com/img/pmcategorygallery/155/base-382-gra-w-laserowy-paintball-3964.jpg"
+          alt=""
+          width="1000px"
+          height="800px"
+        />
+      </aside>
+
       <!-- <img src="lina-stronagłuwana.jpg" /> -->
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
-        doloremque inventore aut! Enim alias quis, hic, laudantium soluta
-        officia, similique nesciunt totam maxime delectus sit id necessitatibus
-        natus quaerat doloribus.
-      </p>
+      <div id="teksty">
+        <p>
+          Paint ball laserowy to świetny wybór.<br />
+          Gra ucząca współpracy i zacieśnia więzi.<br />
+          W pełni bezpieczna.<br />
+          Koszt to 20zł za 1 godzine.
+        </p>
+      </div>
     </main>
 
     <div class="conteiner">

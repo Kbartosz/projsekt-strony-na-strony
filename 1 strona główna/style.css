@@ -3,7 +3,7 @@ body {
 }
 
 .rectangle {
-  height: 150px;
+  height: 120px;
   width: auto;
   background-color: #555;
   margin: 0;
@@ -23,9 +23,13 @@ button {
   border-radius: 45px;
 }
 
+p {
+  margin: 0;
+}
+
 .button1 {
   background-color: gray;
-  color: fff;
+  color: #fff;
   border: 2px solid gray;
 }
 
