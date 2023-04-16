@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strona główna</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .button4 {
+        background-color: orange;
+        color: fff;
+        border: 2px solid orange;
+      }
+
+      body {
+        background-color: #74d0fe;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+      }
+      section {
+        margin: 3em;
+      }
+
+      p{
+        font-size: 34px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      
+      section * {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       
+      }
+      h2{
+        font-size: 34px;
+      }
+      .box{
+        background-color: cyan;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      form{
+        width: auto;
+        
+      }
+
+      input {
+        border-radius: 45px;
+        background-color: rgb(255, 255, 255);
+                font-size: 24px;
+                margin :15px;
+                margin-top: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="rectangle">
+        <a href="index.html">
+          <button class="button button1">Strona Główna</button>
+        </a>
+        <a href="index2.html">
+          <button class="button button2">Gatunki</button>
+        </a>
+        <a href="index3.html">
+          <button class="button button3">Jak zacząć</button>
+        </a>
+        <a href="index4.html">
+          <button class="button button4">Kontakt</button>
+        </a>
+        <a href="index5.html">
+          <button class="button button5">O nas</button>
+        </a>
+      </div>
+
+      <section>
+        <p class="tek">
+          Jeśli masz jakieś pytanie napisz do mnie na Nr telefonu:111 222 333
+          lub email: Zwedkanadwode@gmail.com !
+        </p>
+
+        <div class="box">
+          <form method="post" action="">
+            <h2>Zaloguj się</h2>
+            <label for="mail">
+              <h2>Wpisz mail</h2>
+            </label>
+            <input id="mail" type="email" />
+            <form autocomplete="on">
+              <div class="ważne-container">
+                 <label for="user">
+                    <h1>Użytkownik</h1>
+                 </label>
+                 <input id="user" type="text">  
+                 <label  for="password">
+                    <h1>Hasło</h1>
+                 </label>
+                 <input id="password" type="password">    
+              </div>
+              <div class="boczne-container">
+                   <label for="user">
+                    <h1>Imię</h1>
+                 </label>
+                 <input id="user" type="text">  
+                 <label  for="password">
+                    <h1>Nazwisko</h1>
+                 </label>
+                 <input id="password" type="text">    
+                
+                 
+                 <label for="wiek">
+                  <h1>Wiek</h1>           </label>  
+                          
+
+                  <input id="wiek" type="number">
+              </div>
+              
+              <div class="pelc">
+                 Męszczyzna<input type="radio" name="radio" value="wartość">
+                 Kobieta<input type="radio" name="radio" value="wartość">
+                 inne<input type="radio" name="radio" value="wartość">
+              </div>
+
+            <label for="sub"> </label>
+            <input id="sub" type="submit" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy Bartosz Kościelny 1P</p>
+    </footer>
+  </body>
+</html>
