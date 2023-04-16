@@ -1,3 +1,4 @@
 # projsekt-strony-na-strony
 Figma
-![obraz](https://user-images.githubusercontent.com/113676416/229382125-99041166-9237-4753-abc2-286077954ef7.png)
+![obraz](https://user-images.githubusercontent.com/113676416/232337170-95b2bbf0-8160-4a0e-a6d5-ba5fcc75d9df.png)
+
