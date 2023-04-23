@@ -1,17 +1,21 @@
 body {
-  margin: 0;
+  margin-top: 200px;
 }
 
 .rectangle {
   height: 120px;
-  width: auto;
+  width: 100%;
   background-color: #16bdbd;
-  margin: 0;
+
   padding: 0;
   border: 0;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 button {
@@ -79,6 +83,17 @@ p {
 }
 
 .button5:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.button6 {
+  background-color: gray;
+  color: fff;
+  border: 2px solid gray;
+}
+
+.button6:hover {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
 }

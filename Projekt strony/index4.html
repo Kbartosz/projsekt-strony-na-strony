@@ -22,39 +22,38 @@
         margin: 3em;
       }
 
-      p{
+      p {
         font-size: 34px;
         text-align: center;
         margin-bottom: 20px;
       }
-      
+
       section * {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-       
       }
-      h2{
+      h2 {
         font-size: 34px;
       }
-      .box{
-        background-color: cyan;
+      .box {
+        background-color: rgb(10, 136, 136);
         display: flex;
         flex-wrap: wrap;
+        border: solid black 6px;
       }
 
-      form{
+      form {
         width: auto;
-        
       }
 
       input {
         border-radius: 45px;
         background-color: rgb(255, 255, 255);
-                font-size: 24px;
-                margin :15px;
-                margin-top: 0%;
+        font-size: 24px;
+        margin: 15px;
+        margin-top: 0%;
       }
     </style>
   </head>
@@ -76,6 +75,9 @@
         <a href="index5.html">
           <button class="button button5">O nas</button>
         </a>
+        <a href="index6.html">
+          <button class="button button6">Mini gra</button>
+        </a>
       </div>
 
       <section>
@@ -88,46 +90,38 @@
           <form method="post" action="">
             <h2>Zaloguj się</h2>
             <label for="mail">
-              <h2>Wpisz mail</h2>
+              <h3>Wpisz mail</h3>
             </label>
             <input id="mail" type="email" />
             <form autocomplete="on">
               <div class="ważne-container">
-                 <label for="user">
-                    <h1>Użytkownik</h1>
-                 </label>
-                 <input id="user" type="text">  
-                 <label  for="password">
-                    <h1>Hasło</h1>
-                 </label>
-                 <input id="password" type="password">    
+                <label for="user">
+                  <h3>Użytkownik</h3>
+                </label>
+                <input id="user" type="text" />
+                <label for="password">
+                  <h3>Hasło</h3>
+                </label>
+                <input id="password" type="password" />
               </div>
               <div class="boczne-container">
-                   <label for="user">
-                    <h1>Imię</h1>
-                 </label>
-                 <input id="user" type="text">  
-                 <label  for="password">
-                    <h1>Nazwisko</h1>
-                 </label>
-                 <input id="password" type="text">    
-                
-                 
-                 <label for="wiek">
-                  <h1>Wiek</h1>           </label>  
-                          
+                <label for="user">
+                  <h3>Imię</h3>
+                </label>
+                <input id="user" type="text" />
+                <label for="password">
+                  <h3>Nazwisko</h3>
+                </label>
+                <input id="password" type="text" />
 
-                  <input id="wiek" type="number">
-              </div>
-              
-              <div class="pelc">
-                 Męszczyzna<input type="radio" name="radio" value="wartość">
-                 Kobieta<input type="radio" name="radio" value="wartość">
-                 inne<input type="radio" name="radio" value="wartość">
+                <label for="wiek"> <h3>Wiek</h3> </label>
+
+                <input id="wiek" type="number" />
               </div>
 
-            <label for="sub"> </label>
-            <input id="sub" type="submit" />
+              <label for="sub"> </label>
+              <input id="sub" type="submit" />
+            </form>
           </form>
         </div>
       </section>

@@ -7,6 +7,23 @@
     <title>Strona główna</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+      @keyframes rybkadogory {
+        from {
+          transform: translateY(400%);
+        }
+        to {
+          transform: translateY(-300%);
+        }
+      }
+
+      .rybka {
+        animation-name: rybkadogory;
+        animation-duration: 3s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        /* position: absolute; */
+      }
+
       body {
         background-color: #74d0fe;
         text-align: center;
@@ -18,6 +35,8 @@
         margin-bottom: 0;
         gap: 10px;
         text-align: center;
+        position: relative;
+        bottom: 300px;
       }
 
       .scianka {
@@ -25,6 +44,10 @@
         height: 100%;
         width: 100%;
         text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .button1 {
@@ -48,6 +71,9 @@
   </head>
 
   <body>
+    <div class="rybka">
+      <img src="images.jpg" alt="rysunek ryby" />
+    </div>
     <div class="rectangle">
       <a href="index.html">
         <button class="button button1">Strona Główna</button>
@@ -63,6 +89,9 @@
       </a>
       <a href="index5.html">
         <button class="button button5">O nas</button>
+      </a>
+      <a href="index6.html">
+        <button class="button button6">Mini gra</button>
       </a>
     </div>
     <main>
