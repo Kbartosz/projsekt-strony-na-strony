@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <title>Object Position and Score Counter</title>
+    <style>
+      .button6 {
+        background-color: orange;
+        color: fff;
+        border: 2px solid orange;
+      }
+      body {
+        background-color: aquamarine;
+      }
+      p,
+      h2 {
+        font-size: 34px;
+        margin: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      #object {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        width: 50px;
+        height: 50px;
+
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rectangle">
+      <a href="index.html">
+        <button class="button button1">Strona Główna</button>
+      </a>
+      <a href="index2.html">
+        <button class="button button2">Gatunki</button>
+      </a>
+      <a href="index3.html">
+        <button class="button button3">Jak zacząć</button>
+      </a>
+      <a href="index4.html">
+        <button class="button button4">Kontakt</button>
+      </a>
+      <a href="index5.html">
+        <button class="button button5">O nas</button>
+      </a>
+      <a href="index6.html">
+        <button class="button button6">Mini gra</button>
+      </a>
+    </div>
+    <div id="object">
+      <img src="Bez nazwy.jpg" alt="obraz karpia" />
+    </div>
+    <p>Score: <span id="score">0</span></p>
+
+    <script>
+      const object = document.getElementById("object");
+      const scoreDisplay = document.getElementById("score");
+      let score = 0;
+
+      // Function to change object position
+      function changePosition() {
+        const randomX = Math.floor(
+          Math.random() * (window.innerWidth - object.offsetWidth)
+        );
+        const randomY = Math.floor(
+          Math.random() * (window.innerHeight - object.offsetHeight)
+        );
+        object.style.top = randomY + "px";
+        object.style.left = randomX + "px";
+      }
+
+      // Event listener for click
+      object.addEventListener("click", () => {
+        score++;
+        scoreDisplay.textContent = score;
+        changePosition();
+      });
+
+      // Timer to change position every 5 seconds
+      setInterval(() => {
+        changePosition();
+      }, 2000);
+    </script>
+  </body>
+</html>

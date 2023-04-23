@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strona główna</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @keyframes rybkadogory {
+        from {
+          transform: translateY(400%);
+        }
+        to {
+          transform: translateY(-300%);
+        }
+      }
+
+      .rybka {
+        animation-name: rybkadogory;
+        animation-duration: 3s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        /* position: absolute; */
+      }
+
+      body {
+        background-color: #74d0fe;
+        text-align: center;
+      }
+      main {
+        margin-top: 3em;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-bottom: 0;
+        gap: 10px;
+        text-align: center;
+        position: relative;
+        bottom: 300px;
+      }
+
+      .scianka {
+        background-color: rgb(0, 145, 255);
+        height: 100%;
+        width: 100%;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .button1 {
+        background-color: orange;
+        color: #fff;
+        border: 2px solid orange;
+      }
+      h1 {
+        font-size: 35px;
+        text-align: center;
+        font-family: Verdana;
+      }
+
+      p {
+        padding-bottom: 40px;
+        margin: 50px;
+        font-size: 34px;
+        color: rgb(0, 0, 0);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="rybka">
+      <img src="images.jpg" alt="rysunek ryby" />
+    </div>
+    <div class="rectangle">
+      <a href="index.html">
+        <button class="button button1">Strona Główna</button>
+      </a>
+      <a href="index2.html">
+        <button class="button button2">Gatunki</button>
+      </a>
+      <a href="index3.html">
+        <button class="button button3">Jak zacząć</button>
+      </a>
+      <a href="index4.html">
+        <button class="button button4">Kontakt</button>
+      </a>
+      <a href="index5.html">
+        <button class="button button5">O nas</button>
+      </a>
+      <a href="index6.html">
+        <button class="button button6">Mini gra</button>
+      </a>
+    </div>
+    <main>
+      <div class="scianka">
+        <div id="teksty">
+          <h1>Z wędką nad wodę</h1>
+          <p>
+            Witaj. <br />Jeśli znalazłeś się na tej stronie to może chcesz się
+            dowiedzieć czegoś o wędkowaniu ? <br />
+            Wędkownie jest moją psją od wielu lat. <br />
+            Obojętnie czy dopiro zaczynasz czy też wędkujesz od wielu lat.<br />
+            Ta strona jest odpowiednia dla ciebie.<br />
+            Jeśli nie wiesz gdzie zacząć swoją przygodę, mam dla cibie krótki
+            poradnik.<br />
+            Do zoobaczenia!<br />
+            I udanych łowów!
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy Bartosz Kościelny 1P</p>
+    </footer>
+  </body>
+</html>
