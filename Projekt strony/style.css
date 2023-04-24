@@ -6,6 +6,8 @@ body {
   height: 120px;
   width: 100%;
   background-color: #16bdbd;
+  
+  z-index:10;
 
   padding: 0;
   border: 0;
